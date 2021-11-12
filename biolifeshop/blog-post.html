@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biolife - Organic Food</title>
+    <link href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400i,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&amp;display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/slick.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main-color.css">
+</head>
+<body class="biolife-body">
+
+    <!-- Preloader -->
+    <div id="biof-loading">
+        <div class="biof-loading-center">
+            <div class="biof-loading-center-absolute">
+                <div class="dot dot-one"></div>
+                <div class="dot dot-two"></div>
+                <div class="dot dot-three"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER -->
+    <header id="header" class="header-area style-01 layout-03">
+        <div class="header-top bg-main hidden-xs">
+            <div class="container">
+                <div class="top-bar left">
+                    <ul class="horizontal-menu">
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>Organic@company.com</a></li>
+                        <li><a href="#">Giao hàng miễn phí cho tất cả đơn hàng từ 200K</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar right">
+                    <ul class="social-list">
+                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul class="horizontal-menu">
+                        <li class="horz-menu-item currency">
+                            <select name="currency">
+                                <option value="eur">€ EUR (Euro)</option>
+                                <option value="usd" selected>$ USD (Dollar)</option>
+                                <option value="usd">£ GBP (Pound)</option>
+                                <option value="usd">¥ JPY (Yen)</option>
+                                <option value="usd">đ VND (VND)</option>
+                            </select>
+                        </li>
+                        <li class="horz-menu-item lang">
+                            <select name="language">
+                                <option value="fr">French (EUR)</option>
+                                <option value="en" selected>English (USD)</option>
+                                <option value="ger">Germany (GBP)</option>
+                                <option value="jp">Japan (JPY)</option>
+                                <option value="jp">Việt Nam (VND)</option>
+                            </select>
+                        </li>
+                        <li><a href="login.html" class="login-link"><i class="biolife-icon icon-login"></i>Đăng nhập/Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-middle biolife-sticky-object ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-2 col-md-6 col-xs-6">
+                        <a href="index-2.html" class="biolife-logo"><img src="assets/images/organic-3.png" alt="biolife logo" width="135" height="34"></a>
+                    </div>
+                    <div class="col-lg-6 col-md-7 hidden-sm hidden-xs">
+                        <div class="primary-menu">
+                            <ul class="menu biolife-menu clone-main-menu clone-primary-menu" id="primary-menu" data-menuname="main menu">
+                                <li class="menu-item"><a href="index.html">Trang chủ</a></li>
+                                <li class="menu-item"><a href="">Chính sách giao hàng</a></li>
+                                <li class="menu-item"><a href="">Blog</a></li>
+                                <li class="menu-item"><a href="contact.html">Liên hệ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-md-6 col-xs-6">
+                        <div class="biolife-cart-info">
+                            <div class="mobile-search">
+                                <a href="javascript:void(0)" class="open-searchbox"><i class="biolife-icon icon-search"></i></a>
+                                <div class="mobile-search-content">
+                                    <form action="#" class="form-search" name="mobile-seacrh" method="get">
+                                        <a href="#" class="btn-close"><span class="biolife-icon icon-close-menu"></span></a>
+                                        <input type="text" name="s" class="input-text" value="" placeholder="Search here...">
+                                        <button type="submit" class="btn-submit">go</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="wishlist-block hidden-sm hidden-xs">
+                                <a href="#" class="link-to">
+                                    <span class="icon-qty-combine">
+                                        <i class="icon-heart-bold biolife-icon"></i>
+                                        <!--                                    <span class="qty">4</span>-->
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="minicart-block">
+                                <div class="minicart-contain">
+                                    <a href="javascript:void(0)" class="link-to">
+                                            <span class="icon-qty-combine">
+                                                <i class="icon-cart-mini biolife-icon"></i>
+                                                <!--                                            <span class="qty">8</span>-->
+                                            </span>
+                                        <span class="title">My cart-</span>
+                                        <span class="sub-total">$0.00</span>
+                                    </a>
+                                    <div class="cart-content">
+                                        <div class="cart-inner">
+                                            <!--                                            <ul class="products">-->
+                                            <!--&lt;!&ndash;                                                <li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    <div class="minicart-item">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="thumb">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#"><img src="assets/images/minicart/pr-01.jpg" width="90" height="90" alt="National Fresh"></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                        <div class="left-info">&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            <div class="product-title"><a href="#" class="product-name">National Fresh Fruit</a></div>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            <div class="price">&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                                <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                                <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            </div>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            <div class="qty">&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                                <label for="cart[id123][qty]">Qty:</label>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                                <input type="number" class="input-qty" name="cart[id123][qty]" id="cart[id123][qty]" value="1" disabled>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            </div>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                        </div>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                        <div class="action">&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            <a href="#" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                            <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;&lt;!&ndash;                                                        </div>&ndash;&gt;&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                </li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                <li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    <div class="minicart-item">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="thumb">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#"><img src="assets/images/minicart/pr-02.jpg" width="90" height="90" alt="National Fresh"></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="left-info">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="product-title"><a href="#" class="product-name">National Fresh Fruit</a></div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="price">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="qty">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <label for="cart[id124][qty]">Qty:</label>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <input type="number" class="input-qty" name="cart[id124][qty]" id="cart[id124][qty]" value="1" disabled>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="action">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                </li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                <li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    <div class="minicart-item">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="thumb">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#"><img src="assets/images/minicart/pr-03.jpg" width="90" height="90" alt="National Fresh"></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="left-info">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="product-title"><a href="#" class="product-name">National Fresh Fruit</a></div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="price">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="qty">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <label for="cart[id125][qty]">Qty:</label>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <input type="number" class="input-qty" name="cart[id125][qty]" id="cart[id125][qty]" value="1" disabled>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="action">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                </li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                <li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    <div class="minicart-item">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="thumb">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#"><img src="assets/images/minicart/pr-04.jpg" width="90" height="90" alt="National Fresh"></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="left-info">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="product-title"><a href="#" class="product-name">National Fresh Fruit</a></div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="price">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="qty">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <label for="cart[id126][qty]">Qty:</label>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <input type="number" class="input-qty" name="cart[id126][qty]" id="cart[id126][qty]" value="1" disabled>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="action">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                </li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                <li>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    <div class="minicart-item">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="thumb">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#"><img src="assets/images/minicart/pr-05.jpg" width="90" height="90" alt="National Fresh"></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="left-info">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="product-title"><a href="#" class="product-name">National Fresh Fruit</a></div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="price">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <ins><span class="price-amount"><span class="currencySymbol">£</span>85.00</span></ins>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <del><span class="price-amount"><span class="currencySymbol">£</span>95.00</span></del>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <div class="qty">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <label for="cart[id127][qty]">Qty:</label>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                                <input type="number" class="input-qty" name="cart[id127][qty]" id="cart[id127][qty]" value="1" disabled>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        <div class="action">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="edit"><i class="fa fa-pencil" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                            <a href="#" class="remove"><i class="fa fa-trash-o" aria-hidden="true"></i></a>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                        </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                    </div>&ndash;&gt;-->
+                                            <!--&lt;!&ndash;                                                </li>&ndash;&gt;-->
+                                            <!--                                            </ul>-->
+                                            <p class="btn-control">
+                                                <a href="#" class="btn view-cart">Xem giỏ hàng </a>
+                                                <a href="#" class="btn">Thanh toán</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mobile-menu-toggle">
+                                <a class="btn-toggle" data-object="open-mobile-menu" href="javascript:void(0)">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom hidden-sm hidden-xs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="vertical-menu vertical-category-block">
+                            <div class="block-title">
+                                <span class="menu-icon">
+                                    <span class="line-1"></span>
+                                    <span class="line-2"></span>
+                                    <span class="line-3"></span>
+                                </span>
+                                <span class="menu-title">Danh sách sản phẩm</span>
+                                <span class="angle" data-tgleclass="fa fa-caret-down"><i class="fa fa-caret-up" aria-hidden="true"></i></span>
+                            </div>
+                            <div class="wrap-menu">
+                                <ul class="menu clone-main-menu">
+                                    <li class="menu-item menu-item-has-children has-megamenu">
+                                        <a href="#" class="menu-name" data-title="Fruit"><i class="biolife-icon icon-fruits"></i>Trái cây</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children has-megamenu">
+                                        <a href="#" class="menu-name" data-title="Vegetables"><i class="biolife-icon icon-fruits"></i>Rau củ</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children has-megamenu">
+                                        <a href="#" class="menu-name" data-title="Fresh Berries"><i class="biolife-icon icon-grape"></i>Qủa mọng</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children has-megamenu">
+                                        <a href="#" class="menu-name" data-title="Vegetables"><i class="biolife-icon icon-fruits"></i>Rau củ quả gia vị</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children has-megamenu">
+                                        <a href="#" class="menu-name" data-title="Fruit"><i class="biolife-icon icon-fruits"></i>Các loại quả nhập khẩu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8 padding-top-2px">
+                        <div class="header-search-bar layout-01">
+                            <form action="#" class="form-search" name="desktop-seacrh" method="get">
+                                <input type="text" name="s" class="input-text" value="" placeholder="Tìm kiếm...">
+                                <button type="submit" class="btn-submit"><i class="biolife-icon icon-search"></i></button>
+                            </form>
+                        </div>
+                        <div class="live-info">
+                            <p class="telephone"><i class="fa fa-phone" aria-hidden="true"></i><b class="phone-number">(+900) 123 456 7891</b></p>
+                            <p class="working-time">Thứ 2-6: 8:30am-7:30pm; Thứ 7-CN: 9:30am-4:30pm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Hero Section-->
+    <div class="hero-section hero-background style-02">
+        <h1 class="page-title">Blog Biolife Shop</h1>
+        <nav class="biolife-nav">
+            <ul>
+                <li class="nav-item"><a href="index-2.html" class="permal-link">Trang chủ</a></li>
+                <li class="nav-item"><span class="current-page">Blog</span></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Page Contain -->
+    <div class="page-contain blog-page left-sidebar">
+        <div class="container">
+            <div class="row">
+
+                <!-- Main content -->
+                <div id="main-content" class="main-content col-lg-9 col-md-8 col-sm-12 col-xs-12">
+
+                    <!--Single Post Contain-->
+                    <div class="single-post-contain">
+
+                        <div class="post-head">
+                            <div class="thumbnail">
+                                <figure><img src="assets/images/blogpost/post_thumbnail.jpg" width="870" height="635" alt=""></figure>
+                            </div>
+                            <h2 class="post-name">Lưu trữ và bảo quản rau củ cũng là một “nghệ thuật”</h2>
+                            <p class="post-archive"><b class="post-cat">ORGANIC</b><span class="post-date"> / 26-12</span><span class="author">Đăng bởi: Braum J.Teran</span></p>
+                        </div>
+
+                        <div class="post-content">
+                            <p>1. Tuyệt đối không rửa rau, củ, quả trước khi mang đi cất trữ.Điều đó sẽ khiến rau, củ, quả dễ bị ủng, thối. Bạn chỉ cần lau qua bằng giấy ăn hoặc khăn khô là được.</p>
+                            <p>2. Không nên để rau, củ, quả trong môi trường ẩm ướt bởi như vậy sẽ khiến chúng nhanh hỏng.Các bạn nên đặt giấy ăn khô và những chiếc túi hay hộp bảo quản rau, củ, quả.</p>
+                            <p>3. Tuyệt đối không cho các loại rau quả này vào tủ lạnh!Ớt chuông, dưa chuột, cà chua cần được bảo quản ở nhiệt độ phòng, nếu không chúng sẽ nhanh hỏng và dễ mất chất.</p>
+                            <p>4. Rau, củ, quả đã cắt hoặc gọt vỏ cần cho vào hộp kín.Như vậy sẽ khiến cho thực phẩm của bạn giữ được lâu hơn và hạn chế tình trạng mất chất.</p>
+                            <p>5. Không nên để rau, củ, quả ở nhiệt độ quá lạnh.Đừng nghĩ rằng điều đó sẽ giúp bảo quản lâu hơn, trái lại nó còn khiến thực phẩm của bạn nhanh hỏng hơn khi rã đông đó.</p>
+                            <p>6. Một số loại rau quả không nên để cùng nhau.Chúng ta không nên để chung chuối, quả mơ, dưa hấu, lê, mận, xoài, và cà chua với một trong các loại rau quả bao gồm táo, cà tím, dưa hấu, khoai tây, bí ngô, cà rốt và bông cải xanh. Điều đó sẽ khiến rau quả của bạn nhanh bị hỏng.</p>
+                            <p>7. Muốn bảo quản rau củ ở nhiệt độ phòng, hãy để chúng ở vị trí thông thoáng.Tránh cho vào hộp hay túi nilon ở nhiệt độ thường, như vậy thực phẩm sẽ nhanh bị ủng, thối…</p>
+                            <p>8. Muốn giữ nho tươi lâu, hãy cho vào túi polyetylen hoặc hộp nhựa.Với nho hay cherry, bạn nên cho vào túi polyetylen hoặc hộp nhựa rồi đặt vào tủ lạnh.</p>
+                            <p>9. Không nên cho chuối vào tủ lạnh.Thay vào đó, các bạn hãy để ở nhiệt độ phòng và bọc phần cuống lại bằng màng bọc thực phẩm.</p>
+                            <blockquote>
+                                <address>
+                                    <span>Nguồn từ <a href="#" class="author">Koan Conella</a></span>
+                                </address>
+                            </blockquote>
+                        </div>
+
+                        <div class="post-foot">
+
+                            <div class="post-tags">
+                                <ul class="tags">
+                                    <li><a href="#" class="tag-link">Nước trái cây</a></li>
+                                    <li><a href="#" class="tag-link">Thức ăn nhanh</a></li>
+                                    <li><a href="#" class="tag-link">Thực phẩm mới</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="auth-info">
+                                <div class="ath">
+                                    <a href="#" class="avata"><img src="assets/images/blogpost/author-02.png" width="29" height="28" alt="Christian Doe">Christian Doe</a>
+                                    <span class="count-item viewer"><i class="fa fa-eye" aria-hidden="true"></i>630</span>
+                                    <span class="count-item commented"><i class="fa fa-commenting" aria-hidden="true"></i>26</span>
+                                </div>
+                                <div class="socials-connection">
+                                    <span class="title">Chia sẻ:</span>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="socail-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="socail-link"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="socail-link"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="socail-link"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                        <li><a href="#" class="socail-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!--Comment Block-->
+                    <div class="post-comments">
+                        <h3 class="cmt-title">Bình luân<sup>(26)</sup></h3>
+
+                        <div class="comment-form">
+                            <form action="#" method="post" name="frm-post-comment">
+                                <p class="form-row">
+                                    <textarea name="txt-comment" id="txt-comment-ath-3364" cols="30" rows="10" placeholder="Viết bình luận của bạn"></textarea>
+                                    <a href="#" class="current-author"><img src="assets/images/blogpost/viewer-avt.png" width="41" height="41" alt=""></a>
+                                </p>
+                                <p class="form-row last-btns">
+                                    <button type="submit" class="btn btn-sumit">Đăng bình luận</button>
+                                    <a href="#" class="btn btn-fn-1"><i class="fa fa-smile-o" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn btn-fn-1"><i class="fa fa-paperclip" aria-hidden="true"></i></a>
+                                    <a href="#" class="btn btn-fn-1"><i class="fa fa-file-image-o" aria-hidden="true"></i></a>
+                                </p>
+                            </form>
+                        </div>
+
+                        <div class="comment-list">
+
+                            <ol class="post-comments lever-0">
+                                <li class="comment-elem">
+                                    <div class="wrap-post-comment">
+
+                                        <div class="cmt-inner">
+                                            <div class="auth-info">
+                                                <a href="#" class="author-contact"><img src="assets/images/blogpost/author-02.png" alt="" width="29" height="28">Người nào đó</a>
+                                                <span class="cmt-time">4 days ago</span>
+                                            </div>
+                                            <div class="cmt-content">
+                                                <p>Bài viết có những chia sẻ thú vị và bổ ích</p>
+                                            </div>
+                                            <div class="cmt-fooot">
+                                                <a href="#" class="btn btn-response"><i class="fa fa-commenting" aria-hidden="true"></i>Phản hồi</a>
+                                                <a href="#" class="btn btn-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>9</a>
+                                                <a href="#" class="btn btn-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i>1</a>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment-resposes">
+                                            <ol class="post-comments lever-1">
+                                                <li class="comment-elem">
+                                                    <div class="wrap-post-comment">
+                                                        <div class="cmt-inner">
+                                                            <div class="auth-info">
+                                                                <a href="#" class="author-contact"><img src="assets/images/blogpost/author-03.png" alt="" width="29" height="28">admin</a>
+                                                                <span class="cmt-time">4 days ago</span>
+                                                            </div>
+                                                            <div class="cmt-content">
+                                                                <p>Cám ơn bạn!</p>
+                                                            </div>
+                                                            <div class="cmt-fooot">
+                                                                <a href="#" class="btn btn-response"><i class="fa fa-commenting" aria-hidden="true"></i>Phản hồi</a>
+                                                                <a href="#" class="btn btn-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>9</a>
+                                                                <a href="#" class="btn btn-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i>1</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <div class="biolife-panigations-block ">
+                                <ul class="panigation-contain">
+                                    <li><span class="current-page">1</span></li>
+                                    <li><a href="#" class="link-page">2</a></li>
+                                    <li><a href="#" class="link-page">3</a></li>
+                                    <li><span class="sep">....</span></li>
+                                    <li><a href="#" class="link-page">20</a></li>
+                                    <li><a href="#" class="link-page next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Sidebar -->
+                <aside id="sidebar" class="sidebar blog-sidebar col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <div class="sidebar-contain">
+
+                        <!--Posts Widget-->
+                        <div class="widget posts-widget">
+                            <h4 class="wgt-title">Bài viết gần đây</h4>
+                            <div class="wgt-content">
+                                <ul class="posts">
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-01.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">Lưu trữ và bảo quản rau củ cũng là một “nghệ thuật”</a></h4>
+                                                <p class="post-archive">22-12<span class="comment">15 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-02.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">4 điều sẽ xảy ra nếu như bạn không ăn rau</a></h4>
+                                                <p class="post-archive">20-12<span class="comment">06 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-03.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">11+lợi ích sức khỏe của dâu tây,những điều cần lưu ý</a></h4>
+                                                <p class="post-archive">12-22<span class="comment">08 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-01.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">Lưu trữ và bảo quản rau củ cũng là một “nghệ thuật”</a></h4>
+                                                <p class="post-archive">22-12<span class="comment">15 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-02.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">4 điều sẽ xảy ra nếu như bạn không ăn rau</a></h4>
+                                                <p class="post-archive">20-12<span class="comment">06 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-03.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">11+lợi ích sức khỏe của dâu tây,những điều cần lưu ý</a></h4>
+                                                <p class="post-archive">12-22<span class="comment">08 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-01.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">Lưu trữ và bảo quản rau củ cũng là một “nghệ thuật”</a></h4>
+                                                <p class="post-archive">22-12<span class="comment">15 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-02.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">4 điều sẽ xảy ra nếu như bạn không ăn rau</a></h4>
+                                                <p class="post-archive">20-12<span class="comment">06 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-03.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">11+lợi ích sức khỏe của dâu tây,những điều cần lưu ý</a></h4>
+                                                <p class="post-archive">12-22<span class="comment">08 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-01.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">Lưu trữ và bảo quản rau củ cũng là một “nghệ thuật”</a></h4>
+                                                <p class="post-archive">22-12<span class="comment">15 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-02.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">4 điều sẽ xảy ra nếu như bạn không ăn rau</a></h4>
+                                                <p class="post-archive">20-12<span class="comment">06 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wgt-post-item">
+                                            <div class="thumb">
+                                                <a href="#"><img src="assets/images/blogpost/post-wgt-03.jpg" width="80" height="58" alt=""></a>
+                                            </div>
+                                            <div class="detail">
+                                                <h4 class="post-name"><a href="blog-post.html" style="font-size: 13px">11+lợi ích sức khỏe của dâu tây,những điều cần lưu ý</a></h4>
+                                                <p class="post-archive">12-22<span class="comment">08 Bình luận</span></p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer layout-03">
+        <div class="footer-content background-footer-03">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-9">
+                        <section class="footer-item">
+                            <a href="index-2.html" class="logo footer-logo"><img src="assets/images/organic-3.png" alt="biolife logo" width="135" height="34"></a>
+                            <div class="footer-phone-info">
+                                <i class="biolife-icon icon-head-phone"></i>
+                                <p class="r-info">
+                                    <span>Liên lạc với chúng tôi qua hot-line: </span>
+                                    <span>037-353-5207</span>
+                                </p>
+                            </div>
+                            <div class="newsletter-block layout-01">
+                                <h4 class="title">Đăng kí nhận tin</h4>
+                                <div class="form-content">
+                                    <form action="#" name="new-letter-foter">
+                                        <input type="email" class="input-text email" value="" placeholder="nhập email ở đây...">
+                                        <button type="submit" class="bnt-submit" name="ok">Đăng kí</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 md-margin-top-5px sm-margin-top-50px xs-margin-top-40px">
+                        <section class="footer-item">
+                            <h3 class="section-title">link quan trọng</h3>
+                            <div class="row">
+                                <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="wrap-custom-menu vertical-menu-2">
+                                        <ul class="menu">
+                                            <li><a href="#">Trang chủ</a></li>
+                                            <li><a href="#">blog</a></li>
+                                            <li><a href="#">chích sách khách hàng</a></li>
+                                            <li><a href="#">liên hệ</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-sm-6 col-xs-6">
+                                    <div class="wrap-custom-menu vertical-menu-2">
+                                        <ul class="menu">
+                                            <li><a href="#">trái cây</a></li>
+                                            <li><a href="#">rau củ</a></li>
+                                            <li><a href="#">quả mọng</a></li>
+                                            <li><a href="#">trái cây nhập khẩu</a></li>
+                                            <li><a href="#">các loại rau gia vị</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 md-margin-top-5px sm-margin-top-50px xs-margin-top-40px">
+                        <section class="footer-item">
+                            <h3 class="section-title">Trung tâm phân phối rau củ quả, có bán sỉ</h3>
+                            <div class="contact-info-block footer-layout xs-padding-top-10px">
+                                <ul class="contact-lines">
+                                    <li>
+                                        <p class="info-item">
+                                            <i class="biolife-icon icon-location"></i>
+                                            <b class="desc">phường Linh trung, quận Thủ Đức, thành phố HCM</b>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="info-item">
+                                            <i class="biolife-icon icon-phone"></i>
+                                            <b class="desc">số điện thoại: 037 353 5208</b>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="info-item">
+                                            <i class="biolife-icon icon-letter"></i>
+                                            <b class="desc">Email: Organic@company.com</b>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p class="info-item">
+                                            <i class="biolife-icon icon-clock"></i>
+                                            <b class="desc">lịch làm việc: 6h sáng-> 10 tối. 7 ngày/tuần</b>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="biolife-social inline">
+                                <ul class="socials">
+                                    <li><a href="#" title="twitter" class="socail-btn"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="facebook" class="socail-btn"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="pinterest" class="socail-btn"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="youtube" class="socail-btn"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                                    <li><a href="#" title="instagram" class="socail-btn"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="separator sm-margin-top-70px xs-margin-top-40px"></div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <div class="copy-right-text"><p><a href="templateshub.net">Templates Hub</a></p></div>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+                        <div class="payment-methods">
+                            <ul>
+                                <li><a href="#" class="payment-link"><img src="assets/images/card1.jpg" width="51" height="36" alt=""></a></li>
+                                <li><a href="#" class="payment-link"><img src="assets/images/card2.jpg" width="51" height="36" alt=""></a></li>
+                                <li><a href="#" class="payment-link"><img src="assets/images/card3.jpg" width="51" height="36" alt=""></a></li>
+                                <li><a href="#" class="payment-link"><img src="assets/images/card4.jpg" width="51" height="36" alt=""></a></li>
+                                <li><a href="#" class="payment-link"><img src="assets/images/card5.jpg" width="51" height="36" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--Footer For Mobile-->
+    <div class="mobile-footer">
+        <div class="mobile-footer-inner">
+            <div class="mobile-block block-menu-main">
+                <a class="menu-bar menu-toggle btn-toggle" data-object="open-mobile-menu" href="javascript:void(0)">
+                    <span class="fa fa-bars"></span>
+                    <span class="text">Menu</span>
+                </a>
+            </div>
+            <div class="mobile-block block-sidebar">
+                <a class="menu-bar filter-toggle btn-toggle" data-object="open-mobile-filter" href="javascript:void(0)">
+                    <i class="fa fa-sliders" aria-hidden="true"></i>
+                    <span class="text">Sidebar</span>
+                </a>
+            </div>
+            <div class="mobile-block block-minicart">
+                <a class="link-to-cart" href="#">
+                    <span class="fa fa-shopping-bag" aria-hidden="true"></span>
+                    <span class="text">Cart</span>
+                </a>
+            </div>
+            <div class="mobile-block block-global">
+                <a class="menu-bar myaccount-toggle btn-toggle" data-object="global-panel-opened" href="javascript:void(0)">
+                    <span class="fa fa-globe"></span>
+                    <span class="text">Global</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-block-global">
+        <div class="biolife-mobile-panels">
+            <span class="biolife-current-panel-title">Global</span>
+            <a class="biolife-close-btn" data-object="global-panel-opened" href="#">&times;</a>
+        </div>
+        <div class="block-global-contain">
+            <div class="glb-item my-account">
+                <b class="title">My Account</b>
+                <ul class="list">
+                    <li class="list-item"><a href="#">Login/register</a></li>
+                    <li class="list-item"><a href="#">Wishlist <span class="index">(8)</span></a></li>
+                    <li class="list-item"><a href="#">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="glb-item currency">
+                <b class="title">Currency</b>
+                <ul class="list">
+                    <li class="list-item"><a href="#">€ EUR (Euro)</a></li>
+                    <li class="list-item"><a href="#">$ USD (Dollar)</a></li>
+                    <li class="list-item"><a href="#">£ GBP (Pound)</a></li>
+                    <li class="list-item"><a href="#">¥ JPY (Yen)</a></li>
+                </ul>
+            </div>
+            <div class="glb-item languages">
+                <b class="title">Language</b>
+                <ul class="list inline">
+                    <li class="list-item"><a href="#"><img src="assets/images/languages/us.jpg" alt="flag" width="24" height="18"></a></li>
+                    <li class="list-item"><a href="#"><img src="assets/images/languages/fr.jpg" alt="flag" width="24" height="18"></a></li>
+                    <li class="list-item"><a href="#"><img src="assets/images/languages/ger.jpg" alt="flag" width="24" height="18"></a></li>
+                    <li class="list-item"><a href="#"><img src="assets/images/languages/jap.jpg" alt="flag" width="24" height="18"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Top Button -->
+    <a class="btn-scroll-top"><i class="biolife-icon icon-left-arrow"></i></a>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/biolife.framework.js"></script>
+    <script src="assets/js/functions.js"></script>
+</body>
+
+</html>
